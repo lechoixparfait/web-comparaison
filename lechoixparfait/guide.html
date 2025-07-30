@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide d'Achat - Le Choix Parfait</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VOTREID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VOTREID');
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Bouton "Retour en haut" -->
+    <div id="back-to-top" class="back-to-top" aria-label="Retour en haut de page">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <!-- Navigation -->
+    <nav class="sticky-nav bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="acceuil.html" class="flex items-baseline">
+                <span class="text-2xl font-bold text-blue-800">lechoix</span>
+                <span class="text-2xl font-bold text-orange-500 mx-1">parfait</span>
+                <span class="text-xl text-gray-700">.fr</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-6">
+                <a href="acceuil.html" class="flex items-center text-gray-700 hover:text-blue-800">
+                    <i class="fas fa-home mr-2"></i> Accueil
+                </a>
+                <a href="comparatif.html" class="flex items-center text-gray-700 hover:text-blue-800">
+                    <i class="fas fa-list-ol mr-2"></i> Comparatif
+                </a>
+                <a href="methodologie.html" class="flex items-center text-gray-700 hover:text-blue-800">
+                    <i class="fas fa-flask mr-2"></i> Méthodologie
+                </a>
+                <a href="guide.html" class="flex items-center text-white bg-blue-800 px-3 py-1 rounded-lg">
+                    <i class="fas fa-book mr-2"></i> Guide
+                </a>
+                <a href="contact.html" class="flex items-center text-gray-700 hover:text-blue-800">
+                    <i class="fas fa-envelope mr-2"></i> Contact
+                </a>
+            </div>
+            
+            <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <a href="acceuil.html" class="block px-4 py-3 border-b border-gray-100 flex items-center">
+                <i class="fas fa-home mr-3"></i> Accueil
+            </a>
+            <a href="comparatif.html" class="block px-4 py-3 border-b border-gray-100 flex items-center">
+                <i class="fas fa-list-ol mr-3"></i> Comparatif
+            </a>
+            <a href="methodologie.html" class="block px-4 py-3 border-b border-gray-100 flex items-center">
+                <i class="fas fa-flask mr-3"></i> Méthodologie
+            </a>
+            <a href="guide.html" class="block px-4 py-3 border-b border-gray-100 flex items-center bg-blue-50 text-blue-800">
+                <i class="fas fa-book mr-3"></i> Guide
+            </a>
+            <a href="contact.html" class="block px-4 py-3 flex items-center">
+                <i class="fas fa-envelope mr-3"></i> Contact
+            </a>
+        </div>
+    </nav>
+    
+    <!-- Transparency banner -->
+    <div class="bg-blue-50 border-b-2 border-blue-800 py-3 px-4 flex items-center justify-center">
+        <i class="fas fa-info-circle text-blue-800 mr-3"></i>
+        <p class="text-sm text-center">
+            Nos analyses sont basées exclusivement sur des données publiques et recherches approfondies. 
+            <strong>Actuellement, nous ne percevons aucune commission sur les liens d'achat</strong> 
+            car nous ne sommes partenaires d'aucune marque.
+        </p>
+    </div>
+    
+    <!-- Hero Banner -->
+    <section class="hero-banner text-white py-20 md:py-32 px-4">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-6">Guide Complet pour <span class="text-orange-400">Choisir Votre Matelas</span></h1>
+            <p class="text-xl md:text-2xl mb-8">Trouvez le matelas idéal selon vos besoins spécifiques</p>
+            <a href="#position" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg shadow-md transition-all hover-lift">
+                Commencer la lecture <i class="fas fa-arrow-down ml-2"></i>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Main content -->
+    <main class="container mx-auto px-4 py-12 max-w-6xl">
+        <!-- Position de sommeil -->
+        <section id="position" class="mb-16">
+            <div class="flex items-center mb-8">
+                <div class="guide-icon">
+                    <i class="fas fa-bed"></i>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold text-blue-800 ml-4">Choisir selon sa position de sommeil</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Dos -->
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all hover-lift">
+                    <div class="text-center mb-4">
+                        <span class="text-4xl">🛌</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3 text-center">Dormeurs sur le dos</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Fermeté moyenne à ferme</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Soutien lombaire renforcé</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Épaisseur > 22cm</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Matelas recommandés: Emma Hybride, Tediber</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            Voir les modèles <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Côté -->
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all hover-lift">
+                    <div class="text-center mb-4">
+                        <span class="text-4xl">🛌</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3 text-center">Dormeurs sur le côté</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Fermeté moyenne</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Bon contournement des épaules/hanches</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Matelas mémoire de forme</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Matelas recommandés: Hypnia, Emma Original</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            Voir les modèles <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Ventre -->
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all hover-lift">
+                    <div class="text-center mb-4">
+                        <span class="text-4xl">🛌</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3 text-center">Dormeurs sur le ventre</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Fermeté ferme</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Soutien renforcé</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Épaisseur modérée</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Matelas recommandés: Tediber, Bultex</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            Voir les modèles <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pub -->
+        <div class="my-12 bg-gray-100 p-4 rounded-lg text-center">
+            <p class="text-sm text-gray-500 mb-2">Publicité</p>
+            <div class="bg-white p-4 rounded border border-gray-200">
+                <p class="text-gray-600">Espace réservé pour publicité</p>
+            </div>
+        </div>
+        
+        <!-- Poids -->
+        <section id="poids" class="mb-16">
+            <div class="flex items-center mb-8">
+                <div class="guide-icon">
+                    <i class="fas fa-weight"></i>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold text-blue-800 ml-4">Choisir selon son poids</h2>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-100">
+                    <!-- Léger -->
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="weight-badge bg-green-100 text-green-800">-60kg</span>
+                            <h3 class="text-xl font-bold text-blue-800">Dormeurs légers</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Fermeté moyenne</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Épaisseur 18-22cm</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Matelas recommandés: Emma Original, Tediber</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Moyen -->
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="weight-badge bg-yellow-100 text-yellow-800">60-90kg</span>
+                            <h3 class="text-xl font-bold text-blue-800">Dormeurs moyens</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Fermeté moyenne à ferme</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Épaisseur 22-25cm</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Matelas recommandés: Emma Hybride, Hypnia</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Lourd -->
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="weight-badge bg-red-100 text-red-800">90kg+</span>
+                            <h3 class="text-xl font-bold text-blue-800">Dormeurs lourds</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Fermeté ferme à très ferme</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Épaisseur 25cm+</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Matelas recommandés: Bultex, Hypnia Renforcé</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Technologies -->
+        <section id="technologies" class="mb-16">
+            <div class="flex items-center mb-8">
+                <div class="guide-icon">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold text-blue-800 ml-4">Comparaison des technologies</h2>
+            </div>
+            
+            <div class="overflow-x-auto bg-white rounded-xl shadow-md">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Type</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Avantages</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Inconvénients</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Prix moyen</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <div class="type-icon">
+                                        <i class="fas fa-memory"></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <div class="text-sm font-medium text-blue-800">Mémoire de forme</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-normal text-sm text-gray-600">
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Excellent contournement du corps</li>
+                                    <li>Réduction des points de pression</li>
+                                    <li>Adapté aux douleurs articulaires</li>
+                                </ul>
+                            </td>
+                            <td class="px-6 py-4 whitespace-normal text-sm text-gray-600">
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Peut être chaud en été</li>
+                                    <li>Temps d'adaptation nécessaire</li>
+                                    <li>Prix élevé</li>
+                                </ul>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                                800-1500€
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <div class="type-icon">
+                                        <i class="fas fa-cubes"></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <div class="text-sm font-medium text-blue-800">Ressorts ensachés</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-normal text-sm text-gray-600">
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Bon soutien et durabilité</li>
+                                    <li>Bonne aération</li>
+                                    <li>Indépendance de couchage</li>
+                                </ul>
+                            </td>
+                            <td class="px-6 py-4 whitespace-normal text-sm text-gray-600">
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Peut être bruyant</li>
+                                    <li>Moins de contournement</li>
+                                    <li>Poids élevé</li>
+                                </ul>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                                600-1200€
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <div class="type-icon">
+                                        <i class="fas fa-th-large"></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <div class="text-sm font-medium text-blue-800">Latex</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-normal text-sm text-gray-600">
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Naturel et hypoallergénique</li>
+                                    <li>Très durable</li>
+                                    <li>Bon soutien élastique</li>
+                                </ul>
+                            </td>
+                            <td class="px-6 py-4 whitespace-normal text-sm text-gray-600">
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Prix très élevé</li>
+                                    <li>Poids important</li>
+                                    <li>Peut être trop ferme pour certains</li>
+                                </ul>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                                1000-2500€
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <!-- Erreurs -->
+        <section id="erreurs">
+            <div class="flex items-center mb-8">
+                <div class="guide-icon">
+                    <i class="fas fa-times-circle"></i>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold text-blue-800 ml-4">5 Erreurs à éviter absolument</h2>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="bg-white rounded-xl shadow-md p-6 flex items-start transition-all hover-lift">
+                    <div class="error-icon">1</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-800 mb-2">Choisir uniquement sur le prix</h3>
+                        <p class="text-gray-600">Un matelas est un investissement sur plusieurs années. Un prix trop bas peut signifier une qualité médiocre et une durée de vie réduite. Privilégiez le rapport qualité-prix plutôt que le prix seul.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6 flex items-start transition-all hover-lift">
+                    <div class="error-icon">2</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-800 mb-2">Négliger la période d'essai</h3>
+                        <p class="text-gray-600">Il faut plusieurs semaines pour s'adapter à un nouveau matelas. Assurez-vous d'avoir une période d'essai d'au moins 100 nuits pour pouvoir le retourner si nécessaire.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6 flex items-start transition-all hover-lift">
+                    <div class="error-icon">3</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-800 mb-2">Oublier de vérifier la garantie</h3>
+                        <p class="text-gray-600">Une garantie de moins de 10 ans est souvent le signe d'un produit de qualité moyenne. Recherchez des garanties d'au moins 10 ans, voire 15-20 ans pour les meilleurs matelas.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6 flex items-start transition-all hover-lift">
+                    <div class="error-icon">4</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-800 mb-2">Choisir un matelas trop petit</h3>
+                        <p class="text-gray-600">Pour un couple, un matelas de 140cm est souvent trop étroit. Privilégiez 160cm minimum pour un confort optimal. Pour une personne seule, 90cm est un minimum.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6 flex items-start transition-all hover-lift">
+                    <div class="error-icon">5</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-800 mb-2">Garder un matelas trop vieux</h3>
+                        <p class="text-gray-600">Un matelas a une durée de vie moyenne de 7-10 ans. Au-delà, il perd ses propriétés de soutien et peut affecter votre sommeil et votre santé.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- CTA -->
+    <section class="py-12 px-4 bg-gradient-to-r from-blue-800 to-blue-900 text-white">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6">Prêt à trouver votre matelas idéal ?</h2>
+            <p class="text-xl mb-8">Découvrez notre comparatif complet des meilleurs matelas selon notre méthodologie rigoureuse</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="comparatif.html" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg shadow-md transition-all hover-lift">
+                    Voir le classement <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="methodologie.html" class="inline-block bg-white hover:bg-gray-100 text-blue-800 font-bold py-3 px-8 rounded-lg shadow-md transition-all hover-lift">
+                    Notre méthodologie <i class="fas fa-flask ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Le Choix Parfait</h3>
+                    <p class="mb-4 text-blue-200">
+                        Comparateur indépendant de matelas depuis 2023. Nos analyses scientifiques vous aident à trouver le matelas idéal pour un sommeil réparateur.
+                    </p>
+                    <p class="text-blue-200">
+                        <strong>Note importante :</strong> Nos évaluations sont basées sur des recherches approfondies et des données disponibles publiquement. Nous ne procédons pas à des tests physiques des produits.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="acceuil.html" class="text-blue-200 hover:text-white transition-colors">Accueil</a></li>
+                        <li><a href="comparatif.html" class="text-blue-200 hover:text-white transition-colors">Comparatif</a></li>
+                        <li><a href="methodologie.html" class="text-blue-200 hover:text-white transition-colors">Méthodologie</a></li>
+                        <li><a href="guide.html" class="text-blue-200 hover:text-white transition-colors">Guide</a></li>
+                        <li><a href="contact.html" class="text-blue-200 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Légal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="page juridique.html" class="text-blue-200 hover:text-white transition-colors">Mentions légales</a></li>
+                        <li><a href="page juridique.html" class="text-blue-200 hover:text-white transition-colors">Politique de confidentialité</a></li>
+                        <li><a href="page juridique.html" class="text-blue-200 hover:text-white transition-colors">Préférences cookies</a></li>
+                        <li><a href="page juridique.html" class="text-blue-200 hover:text-white transition-colors">Politique d'affiliation</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-6 border-t border-blue-700 text-center text-blue-200 text-sm">
+                <p>© 2025 lechoixparfait.fr - Tous droits réservés</p>
+                <p class="mt-2">
+                    <strong>Transparence :</strong> 
+                    Actuellement, nous ne percevons aucune commission sur les achats via les liens présents sur ce site, 
+                    car nous ne sommes partenaires d'aucune marque. Les prix et disponibilités proviennent du site officiel et sont susceptibles changer.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update URL without page jump
+                    if (history.pushState) {
+                        history.pushState(null, null, targetId);
+                    } else {
+                        location.hash = targetId;
+                    }
+                }
+            });
+        });
+        
+        // Animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.hover-lift');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.classList.add('animate__animated', 'animate__fadeInUp');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

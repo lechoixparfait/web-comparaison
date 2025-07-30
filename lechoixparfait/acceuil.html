@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Choix Parfait - Comparateur Expert de Matelas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VOTREID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VOTREID');
+    </script>
+    <style>
+        .review-source {
+            font-size: 0.75rem;
+            color: #64748b;
+            margin-top: 0.25rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .review-source a {
+            color: #3b82f6;
+            text-decoration: none;
+            margin-left: 0.25rem;
+        }
+        
+        .review-source a:hover {
+            text-decoration: underline;
+        }
+        
+        .trust-badge {
+            display: inline-flex;
+            align-items: center;
+            background: #f8fafc;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            color: #334155;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .verified-badge {
+            display: inline-flex;
+            align-items: center;
+            background: #f0fdf4;
+            color: #166534;
+            padding: 0.15rem 0.5rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            border: 1px solid #bbf7d0;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Bouton "Retour en haut" -->
+    <div id="back-to-top" class="back-to-top" aria-label="Retour en haut de page">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="sticky-nav bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="acceuil.html" class="flex items-baseline">
+                <span class="text-2xl font-bold text-blue-800">lechoix</span>
+                <span class="text-2xl font-bold text-orange-500 mx-1">parfait</span>
+                <span class="text-xl text-gray-700">.fr</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-6">
+                <a href="acceuil.html" class="flex items-center text-white bg-blue-800 px-3 py-1 rounded-lg">
+                    <i class="fas fa-home mr-2"></i> Accueil
+                </a>
+                <a href="comparatif.html" class="flex items-center text-gray-700 hover:text-blue-800">
+                    <i class="fas fa-list-ol mr-2"></i> Comparatif
+                </a>
+                <a href="methodologie.html" class="flex items-center text-gray-700 hover:text-blue-800">
+                    <i class="fas fa-flask mr-2"></i> Méthodologie
+                </a>
+                <a href="guide.html" class="flex items-center text-gray-700 hover:text-blue-800">
+                    <i class="fas fa-book mr-2"></i> Guide
+                </a>
+                <a href="contact.html" class="flex items-center text-gray-700 hover:text-blue-800">
+                    <i class="fas fa-envelope mr-2"></i> Contact
+                </a>
+            </div>
+            
+            <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <a href="acceuil.html" class="block px-4 py-3 border-b border-gray-100 flex items-center bg-blue-50 text-blue-800">
+                <i class="fas fa-home mr-3"></i> Accueil
+            </a>
+            <a href="comparatif.html" class="block px-4 py-3 border-b border-gray-100 flex items-center">
+                <i class="fas fa-list-ol mr-3"></i> Comparatif
+            </a>
+            <a href="methodologie.html" class="block px-4 py-3 border-b border-gray-100 flex items-center">
+                <i class="fas fa-flask mr-3"></i> Méthodologie
+            </a>
+            <a href="guide.html" class="block px-4 py-3 border-b border-gray-100 flex items-center">
+                <i class="fas fa-book mr-3"></i> Guide
+            </a>
+            <a href="contact.html" class="block px-4 py-3 flex items-center">
+                <i class="fas fa-envelope mr-3"></i> Contact
+            </a>
+        </div>
+    </nav>
+    
+    <!-- Transparency banner -->
+    <div class="bg-blue-50 border-b-2 border-blue-800 py-3 px-4 flex items-center justify-center">
+        <i class="fas fa-info-circle text-blue-800 mr-3"></i>
+        <p class="text-sm text-center">
+            Nos analyses sont basées exclusivement sur des données publiques et recherches approfondies. 
+            <strong>Actuellement, nous ne percevons aucune commission sur les liens d'achat</strong> 
+            car nous ne sommes partenaires d'aucune marque.
+        </p>
+    </div>
+    
+    <!-- Hero Banner -->
+    <section class="banniere text-white py-20 md:py-32 px-4">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-6">Votre sommeil mérite <span class="text-orange-400">le choix parfait</span></h1>
+            <p class="text-xl md:text-2xl mb-8">Découvrez notre sélection 2025 des meilleurs matelas testés scientifiquement</p>
+            <a href="comparatif.html" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg shadow-md transition-all hover-lift">
+                Voir le classement <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Why trust us -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-2 text-center">Pourquoi nous faire confiance ?</h2>
+            <p class="text-gray-600 mb-12 text-center">Notre méthodologie rigoureuse pour votre sommeil parfait</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 transition-all hover-lift">
+                    <div class="text-3xl text-blue-800 mb-4 flex justify-center">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Analyses approfondies</h3>
+                    <p class="text-center text-gray-600">32 matelas évalués selon 12 critères rigoureux</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 transition-all hover-lift">
+                    <div class="text-3xl text-blue-800 mb-4 flex justify-center">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Transparence totale</h3>
+                    <p class="text-center text-gray-600">Méthodologie d'analyse claire et éthique</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 transition-all hover-lift">
+                    <div class="text-3xl text-blue-800 mb-4 flex justify-center">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Sélection impartiale</h3>
+                    <p class="text-center text-gray-600">Aucun partenariat commercial avec les marques présentées</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 transition-all hover-lift">
+                    <div class="text-3xl text-blue-800 mb-4 flex justify-center">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Conseils personnalisés</h3>
+                    <p class="text-center text-gray-600">Choisissez selon votre position de sommeil et morphologie</p>
+                </div>
+            </div>
+            
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded flex items-start max-w-3xl mx-auto">
+                <i class="fas fa-microscope text-yellow-500 mt-1 mr-3"></i>
+                <p class="text-sm">Nos évaluations sont basées sur des données techniques, avis d'experts et retours consommateurs. Nous ne procédons pas à des tests physiques.</p>
+            </div>
+            <!-- Pub -->
+            <div class="my-12 bg-gray-100 p-4 rounded-lg text-center">
+                <p class="text-sm text-gray-500 mb-2">Publicité</p>
+                <div class="bg-white p-4 rounded border border-gray-200">
+                    <p class="text-gray-600">Espace réservé pour publicité</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Top 3 Mattresses -->
+    <section class="py-12 px-4 bg-gray-50">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-2 text-center">Notre Top 3 2025</h2>
+            <p class="text-gray-600 mb-12 text-center">Les matelas exceptionnels qui ont dominé nos analyses</p>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Mattress 1 -->
+                <div class="bg-white rounded-xl shadow-md p-6 relative border-t-4 border-orange-500 transition-all hover-lift">
+                    <div class="badge-position bg-orange-500 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                        1
+                    </div>
+                    
+                    <div class="bg-gray-100 rounded-lg overflow-hidden h-48 mb-4">
+                        <img src="Emma Hybride II.png" alt="Emma Hybride II" class="w-full h-full object-cover transition-all hover-scale">
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">Emma Hybride II</h3>
+                    <div class="text-orange-500 font-semibold mb-3">★★★★★</div>
+                    <p class="text-gray-600 mb-4">Le meilleur investissement pour les couples et ceux souffrant de maux de dos</p>
+                    
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                            <span class="text-gray-700">Régulation thermique exceptionnelle</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                            <span class="text-gray-700">Indépendance de couchage</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                            <span class="text-gray-700">Garantie 10 ans</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="comparatif.html#matelas1" class="inline-block bg-blue-50 hover:bg-blue-100 text-blue-800 font-medium py-2 px-4 rounded-lg transition-all">
+                        Voir l'analyse complète <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Mattress 2 -->
+                <div class="bg-white rounded-xl shadow-md p-6 relative border-t-4 border-orange-500 transition-all hover-lift">
+                    <div class="badge-position bg-orange-500 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                        2
+                    </div>
+                    
+                    <div class="bg-gray-100 rounded-lg overflow-hidden h-48 mb-4">
+                        <img src="Hypnia Bien-Être Suprême.png" alt="Hypnia Bien-Être Suprême" class="w-full h-full object-cover transition-all hover-scale">
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">Hypnia Bien-Être</h3>
+                    <div class="text-orange-500 font-semibold mb-3">★★★★☆ 4.7/5</div>
+                    <p class="text-gray-600 mb-4">La solution idéale contre les douleurs lombaires</p>
+                    
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                            <span class="text-gray-700">Latex naturel certifié</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                            <span class="text-gray-700">Mousse nid d'abeille</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                            <span class="text-gray-700">120 nuits d'essai</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="comparatif.html#matelas2" class="inline-block bg-blue-50 hover:bg-blue-100 text-blue-800 font-medium py-2 px-4 rounded-lg transition-all">
+                        Voir l'analyse complète <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Mattress 3 -->
+                <div class="bg-white rounded-xl shadow-md p-6 relative border-t-4 border-orange-500 transition-all hover-lift">
+                    <div class="badge-position bg-orange-500 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                        3
+                    </div>
+                    
+                    <div class="bg-gray-100 rounded-lg overflow-hidden h-48 mb-4">
+                        <img src="Tediber L'Incroyable Matelas.png" alt="Tediber L'Incroyable" class="w-full h-full object-cover transition-all hover-scale">
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">Tediber L'Incroyable</h3>
+                    <div class="text-orange-500 font-semibold mb-3">★★★★☆ 4.3/5</div>
+                    <p class="text-gray-600 mb-4">L'excellence française pour les amateurs de fermeté</p>
+                    
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                            <span class="text-gray-700">Fabriqué en France</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                            <span class="text-gray-700">Housse en Tencel lavable</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                            <span class="text-gray-700">Fermeté idéale pour dorsaux</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="comparatif.html#matelas3" class="inline-block bg-blue-50 hover:bg-blue-100 text-blue-800 font-medium py-2 px-4 rounded-lg transition-all">
+                        Voir l'analyse complète <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="comparatif.html" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg shadow-md transition-all hover-lift">
+                    Voir les 5 meilleurs matelas
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Nouvelle section : Avis Clients Vérifiés -->
+    <section class="py-12 px-4 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-2 text-center">Avis Clients Vérifiés</h2>
+            <p class="text-gray-600 mb-12 text-center">Ce que disent les utilisateurs de nos recommandations</p>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Avis Emma -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-sm transition-all hover-lift">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sophie M.</h4>
+                            <p class="text-sm text-gray-600">Acheteuse Emma Hybride II</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <div class="text-orange-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Mon mal de dos a considérablement diminué après 3 semaines d'utilisation. Un investissement qui a changé mes nuits."</p>
+                    
+                    <div class="review-source">
+                        <span class="verified-badge">
+                            <i class="fas fa-check-circle mr-1"></i> Avis vérifié
+                        </span>
+                        <a href="https://fr.trustpilot.com/review/emma-matelas.fr" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-external-link-alt text-xs mr-1"></i> Trustpilot
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Avis Hypnia -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-sm transition-all hover-lift">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Thomas P.</h4>
+                            <p class="text-sm text-gray-600">Acheteur Hypnia Bien-Être</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <div class="text-orange-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Très bon rapport qualité-prix. La fermeté est parfaite pour mon dos. Je recommande vivement ce matelas."</p>
+                    
+                    <div class="review-source">
+                        <span class="verified-badge">
+                            <i class="fas fa-check-circle mr-1"></i> Avis vérifié
+                        </span>
+                        <a href="https://fr.trustpilot.com/review/hypnia.fr" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-external-link-alt text-xs mr-1"></i> Trustpilot
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Avis Tediber -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-sm transition-all hover-lift">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Julie R.</h4>
+                            <p class="text-sm text-gray-600">Acheteuse Tediber</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <div class="text-orange-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Livraison rapide et produit français de qualité. Je suis très satisfaite de mon achat après 6 mois d'utilisation."</p>
+                    
+                    <div class="review-source">
+                        <span class="verified-badge">
+                            <i class="fas fa-check-circle mr-1"></i> Avis vérifié
+                        </span>
+                        <a href="https://fr.trustpilot.com/review/tediber.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-external-link-alt text-xs mr-1"></i> Trustpilot
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Source mention -->
+            <div class="text-center text-sm text-gray-600 max-w-2xl mx-auto mt-8">
+                <div class="trust-badge inline-flex items-center mb-2">
+                    <i class="fas fa-shield-alt text-blue-600 mr-1"></i>
+                    <span>Avis vérifiés sur Trustpilot</span>
+                </div>
+                <p class="mt-2">
+                    <i class="fas fa-info-circle mr-2"></i>
+                    Les avis sont extraits de sources publiques et sont présentés à titre informatif.
+                </p>
+            </div>
+            
+            <div class="bg-blue-50 rounded-xl p-6 text-center mt-8">
+                <h3 class="text-xl font-semibold text-blue-800 mb-2">Vous avez testé nos recommandations ?</h3>
+                <p class="mb-4">Partagez votre expérience authentique :</p>
+                <a href="contact.html" class="inline-block bg-blue-800 hover:bg-blue-900 text-white font-medium py-2 px-6 rounded-lg transition-all">
+                    <i class="fas fa-edit mr-2"></i> Publier mon témoignage
+                </a>
+                <p class="text-sm text-gray-600 mt-3">Nous vérifions chaque témoignage avant publication</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Le Choix Parfait</h3>
+                    <p class="mb-4 text-blue-200">
+                        Comparateur indépendant de matelas depuis 2023. Nos analyses scientifiques vous aident à trouver le matelas idéal pour un sommeil réparateur.
+                    </p>
+                    <p class="text-blue-200">
+                        <strong>Note importante :</strong> Nos évaluations sont basées sur des recherches approfondies et des données disponibles publiquement. Nous ne procédons pas à des tests physiques des produits.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="acceuil.html" class="text-blue-200 hover:text-white transition-colors">Accueil</a></li>
+                        <li><a href="comparatif.html" class="text-blue-200 hover:text-white transition-colors">Comparatif</a></li>
+                        <li><a href="tests.html" class="text-blue-200 hover:text-white transition-colors">Méthodologie</a></li>
+                        <li><a href="guide.html" class="text-blue-200 hover:text-white transition-colors">Guide</a></li>
+                        <li><a href="contact.html" class="text-blue-200 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Légal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="page juridique.html" class="text-blue-200 hover:text-white transition-colors">Mentions légales</a></li>
+                        <li><a href="page juridique.html" class="text-blue-200 hover:text-white transition-colors">Politique de confidentialité</a></li>
+                        <li><a href="page juridique.html" class="text-blue-200 hover:text-white transition-colors">Préférences cookies</a></li>
+                        <li><a href="page juridique.html" class="text-blue-200 hover:text-white transition-colors">Politique d'affiliation</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-6 border-t border-blue-700 text-center text-blue-200 text-sm">
+                <p>© 2025 lechoixparfait.fr - Tous droits réservés</p>
+                <p class="mt-2">
+                    <strong>Transparence :</strong> 
+                    Actuellement, nous ne percevons aucune commission sur les achats via les liens présents sur ce site, 
+                    car nous ne sommes partenaires d'aucune marque. Les prix et disponibilités proviennent du site officiel et sont susceptibles changer.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update URL without page jump
+                    if (history.pushState) {
+                        history.pushState(null, null, targetId);
+                    } else {
+                        location.hash = targetId;
+                    }
+                }
+            });
+        });
+        
+        // Animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.hover-lift');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.classList.add('animate__animated', 'animate__fadeInUp');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+        
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
