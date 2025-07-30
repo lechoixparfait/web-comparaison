@@ -3,8 +3,4 @@ Allow: /
 Disallow: /private/
 Disallow: /tmp/
 
-# Fichier sitemap
-Sitemap: https://lechoixparfait.github.io/web-comparaison/sitemap.xml
-
-# Paramètres de crawl
-Crawl-delay: 5
+Sitemap: https://lechoixparfait.github.io/web-comparaison/lechoixparfait/sitemap.xml
