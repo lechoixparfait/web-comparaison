@@ -1,5 +1,5 @@
 /* TEAM */
-Founder: [Votre nom]
+Founder: Three Trust
 Contact: lechoixparfait01@gmail.com
 Site: https://lechoixparfait.github.io/web-comparaison/lechoixparfait/
 
