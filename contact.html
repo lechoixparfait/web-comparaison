@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Le Choix Parfait</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .hero-banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('img.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #1e40af;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+        }
+        
+        .contact-icon i {
+            color: white;
+            font-size: 1.25rem;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item {
+            border-left: 4px solid #ff6b35;
+        }
+        
+        /* Solution de secours */
+        .fallback-email {
+            background: #fffbeb;
+            border: 1px solid #fde68a;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+            display: none; /* Caché par défaut */
+        }
+        
+        /* Améliorations de sécurité */
+        .security-badge {
+            background-color: #d1fae5;
+            color: #065f46;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        
+        .security-badge i {
+            margin-right: 5px;
+        }
+        
+        .security-section {
+            background-color: #f0f9ff;
+            border-left: 4px solid #1e40af;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 25px;
+        }
+        
+        .honeypot-field {
+            position: absolute;
+            left: -5000px;
+        }
+
+    </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8VT7C9CHR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y8VT7C9CHR');
+</script>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Bouton "Retour en haut" -->
+    <div id="back-to-top" class="back-to-top" aria-label="Retour en haut de page">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <!-- Navigation -->
+    <nav class="sticky-nav bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="acceuil.html" class="flex items-baseline">
+                <span class="text-2xl font-bold text-blue-800">lechoix</span>
+                <span class="text-2xl font-bold text-orange-500 mx-1">parfait</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-6">
+                <a href="acceuil.html" class="flex items-center text-gray-700 hover:text-blue-800">
+                    <i class="fas fa-home mr-2"></i> Accueil
+                </a>
+                <a href="comparatif.html" class="flex items-center text-gray-700 hover:text-blue-800">
+                    <i class="fas fa-list-ol mr-2"></i> Comparatif
+                </a>
+                <a href="methodologie.html" class="flex items-center text-gray-700 hover:text-blue-800">
+                    <i class="fas fa-flask mr-2"></i> Méthodologie
+                </a>
+                <a href="guide.html" class="flex items-center text-gray-700 hover:text-blue-800">
+                    <i class="fas fa-book mr-2"></i> Guide
+                </a>
+                <a href="contact.html" class="flex items-center text-white bg-blue-800 px-3 py-1 rounded-lg">
+                    <i class="fas fa-envelope mr-2"></i> Contact
+                </a>
+            </div>
+            
+            <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <a href="acceuil.html" class="block px-4 py-3 border-b border-gray-100 flex items-center">
+                <i class="fas fa-home mr-3"></i> Accueil
+            </a>
+            <a href="comparatif.html" class="block px-4 py-3 border-b border-gray-100 flex items-center">
+                <i class="fas fa-list-ol mr-3"></i> Comparatif
+            </a>
+            <a href="methodologie.html" class="block px-4 py-3 border-b border-gray-100 flex items-center">
+                <i class="fas fa-flask mr-3"></i> Méthodologie
+            </a>
+            <a href="guide.html" class="block px-4 py-3 border-b border-gray-100 flex items-center">
+                <i class="fas fa-book mr-3"></i> Guide
+            </a>
+            <a href="contact.html" class="block px-4 py-3 flex items-center bg-blue-50 text-blue-800">
+                <i class="fas fa-envelope mr-3"></i> Contact
+            </a>
+        </div>
+    </nav>
+    
+    <!-- Transparency banner -->
+    <div class="bg-blue-50 border-b-2 border-blue-800 py-3 px-4 flex items-center justify-center">
+        <i class="fas fa-info-circle text-blue-800 mr-3"></i>
+        <p class="text-sm text-center">
+            Nos analyses sont basées exclusivement sur des données publiques et recherches approfondies. 
+            <strong>Actuellement, nous ne percevons aucune commission sur les liens d'achat</strong> 
+            car nous ne sommes partenaires d'aucune marque.
+        </p>
+    </div>
+    
+    <!-- Hero Banner -->
+    <section class="hero-banner text-white py-20 md:py-32 px-4">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-6">Contactez <span class="text-orange-400">notre équipe</span></h1>
+            <p class="text-xl md:text-2xl mb-8">Une question ? Un partenariat ? Nous vous répondons sous 24h</p>
+            <a href="#formulaire" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg shadow-md transition-all hover-lift">
+                Envoyer un message <i class="fas fa-arrow-down ml-2"></i>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Main content -->
+    <main class="container mx-auto px-4 py-12 max-w-6xl">
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Formulaire de contact -->
+            <section id="formulaire" class="bg-white rounded-xl shadow-md p-8 transition-all hover-lift">
+                <div class="flex items-center mb-8">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-blue-800">Envoyez-nous un message</h2>
+                        <div class="security-badge">
+                            <i class="fas fa-lock"></i> Connexion sécurisée
+                        </div>
+                    </div>
+                </div>
+                
+                <form id="contact-form" class="space-y-6">
+                    <!-- Champ honeypot pour les bots -->
+                    <div class="honeypot-field">
+                        <label for="website">Ne remplissez pas ce champ</label>
+                        <input type="text" id="website" name="website" tabindex="-1">
+                    </div>
+                    
+                    <div>
+                        <label for="nom" class="block text-sm font-medium text-gray-700 mb-1">Nom complet</label>
+                        <input type="text" id="nom" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label for="sujet" class="block text-sm font-medium text-gray-700 mb-1">Sujet</label>
+                        <select id="sujet" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+                            <option>Question générale</option>
+                            <option>Avis</option>
+                            <option>Problème technique</option>
+                            <option>Partenariat commercial</option>
+                            <option>Autre</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                        <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-all hover-lift">
+                        Envoyer le message <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+                </form>
+                
+                <!-- Solution de secours en cas d'échec de l'envoi -->
+                <div id="fallback-section" class="fallback-email">
+                    <h3 class="font-bold text-lg mb-3">Alternative d'envoi</h3>
+                    <p class="mb-3">Si le formulaire ne fonctionne pas, vous pouvez nous envoyer un email directement à :</p>
+                    <a href="mailto:lechoixparfait01@gmail.com" class="inline-block bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-lg">
+                        <i class="fas fa-envelope mr-2"></i> lechoixparfait01@gmail.com
+                    </a>
+                    <p class="mt-3 text-sm text-gray-600">Copiez-collez ce message dans votre client email :</p>
+                    <div id="email-template" class="bg-gray-100 p-3 rounded mt-2 text-sm font-mono"></div>
+                </div>
+                
+                <!-- Section sécurité -->
+                <div class="security-section mt-8">
+                    <h3 class="font-bold text-lg mb-3 flex items-center">
+                        <i class="fas fa-shield-alt text-blue-800 mr-2"></i> Sécurité des données
+                    </h3>
+                    <p class="text-gray-700">
+                        Nous prenons la sécurité de vos données au sérieux. Voici les mesures en place :
+                    </p>
+                    <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-700">
+                        <li>Connexion sécurisée via HTTPS</li>
+                        <li>Protection contre les attaques de type CSRF</li>
+                        <li>Validation des entrées côté client et serveur</li>
+                        <li>Champ anti-robots (honeypot)</li>
+                        <li>Limitation des tentatives d'envoi</li>
+                    </ul>
+                    <p class="mt-3 text-sm text-gray-600">
+                        Vos données ne sont jamais vendues ou partagées avec des tiers. 
+                        Consultez notre <a href="confidentialite.html" class="text-blue-600 hover:underline">politique de confidentialité</a>.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- FAQ -->
+            <section class="space-y-8">
+                <div class="flex items-center mb-8">
+                    <div class="contact-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-blue-800">Foire aux questions</h2>
+                </div>
+                
+                <div class="faq-item bg-white rounded-lg shadow-md p-6 transition-all hover-lift">
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Comment êtes-vous rémunéré ?</h3>
+                    <p class="text-gray-600">
+                        Actuellement, nous ne percevons aucune rémunération. 
+                        <strong>Aucun lien présent sur ce site n'est affilié</strong>. 
+                        Nos recommandations restent 100% indépendantes.
+                    </p>
+                </div>
+                
+                <div class="faq-item bg-white rounded-lg shadow-md p-6 transition-all hover-lift">
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Testez-vous réellement les matelas ?</h3>
+                    <p class="text-gray-600">Non, nos analyses sont basées sur des données techniques, études indépendantes et retours consommateurs. Nous croisons plusieurs sources pour garantir l'objectivité de nos évaluations.</p>
+                </div>
+                
+                <div class="faq-item bg-white rounded-lg shadow-md p-6 transition-all hover-lift">
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Comment mettre à jour une fiche produit ?</h3>
+                    <p class="text-gray-600">Contactez-nous à <a href="mailto:lechoixparfait01@gmail.com" class="text-blue-600 hover:underline">lechoixparfait01@gmail.com</a> avec les nouvelles informations et les sources provenant des sites officiels. Nous vérifierons et mettrons à jour dans les meilleurs délais.</p>
+                </div>
+                
+                <div class="faq-item bg-white rounded-lg shadow-md p-6 transition-all hover-lift">
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Comment protégez-vous mes données personnelles ?</h3>
+                    <p class="text-gray-600">
+                        Vos données sont traitées de manière sécurisée via Formspree. 
+                        Nous ne stockons aucune information personnelle sur nos serveurs. 
+                        Toutes les données transitent par une connexion chiffrée (HTTPS) 
+                        et sont supprimées après traitement de votre demande.
+                    </p>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Partenariats -->
+        <section class="mt-16 bg-white rounded-xl shadow-md p-8 transition-all hover-lift">
+            <div class="flex items-center mb-6">
+                <div class="contact-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-blue-800">Partenariats professionnels</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <p class="text-gray-600 mb-4">Vous êtes fabricant ou distributeur ? Nous proposons différents types de collaborations éthiques et transparentes :</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Mise à jour des fiches produits</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Partenariats éditoriaux</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Offres exclusives pour nos lecteurs</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-blue-50 rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Contact partenariats</h3>
+                    <p class="text-gray-600 mb-4">Pour toute demande professionnelle, contactez-nous directement à :</p>
+                    <a href="mailto:lechoixparfait01@gmail.com" class="inline-block bg-blue-800 hover:bg-blue-900 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-all hover-lift">
+                        <i class="fas fa-envelope mr-2"></i> lechoixparfait01@gmail.com
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- CTA -->
+    <section class="py-12 px-4 bg-gradient-to-r from-blue-800 to-blue-900 text-white">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6">Vous avez d'autres questions ?</h2>
+            <p class="text-xl mb-8">Consultez notre guide complet ou notre comparatif des meilleurs matelas</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="guide.html" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg shadow-md transition-all hover-lift">
+                    Voir le guide <i class="fas fa-book ml-2"></i>
+                </a>
+                <a href="comparatif.html" class="inline-block bg-white hover:bg-gray-100 text-blue-800 font-bold py-3 px-8 rounded-lg shadow-md transition-all hover-lift">
+                    Notre comparatif <i class="fas fa-list-ol ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Le Choix Parfait</h3>
+                    <p class="mb-4 text-blue-200">
+                        Comparateur indépendant de matelas depuis 2023. Nos analyses scientifiques vous aident à trouver le matelas idéal pour un sommeil réparateur.
+                    </p>
+                    <p class="text-blue-200">
+                        <strong>Note importante :</strong> Nos évaluations sont basées sur des recherches approfondies et des données disponibles publiquement. Nous ne procédons pas à des tests physiques des produits.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="acceuil.html" class="text-blue-200 hover:text-white transition-colors">Accueil</a></li>
+                        <li><a href="comparatif.html" class="text-blue-200 hover:text-white transition-colors">Comparatif</a></li>
+                        <li><a href="methodologie.html" class="text-blue-200 hover:text-white transition-colors">Méthodologie</a></li>
+                        <li><a href="guide.html" class="text-blue-200 hover:text-white transition-colors">Guide</a></li>
+                        <li><a href="contact.html" class="text-blue-200 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Légal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="page juridique.html" class="text-blue-200 hover:text-white transition-colors">Mentions légales</a></li>
+                        <li><a href="page juridique.html" class="text-blue-200 hover:text-white transition-colors">Politique de confidentialité</a></li>
+                        <li><a href="page juridique.html" class="text-blue-200 hover:text-white transition-colors">Préférences cookies</a></li>
+                        <li><a href="page juridique.html" class="text-blue-200 hover:text-white transition-colors">Politique d'affiliation</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-6 border-t border-blue-700 text-center text-blue-200 text-sm">
+                <p>© 2025 lechoixparfait.fr - Tous droits réservés</p>
+                <p class="mt-2">
+                    <strong>Transparence :</strong> 
+                    Actuellement, nous ne percevons aucune commission sur les achats via les liens présents sur ce site, 
+                    car nous ne sommes partenaires d'aucune marque. Les prix et disponibilités proviennent du site officiel et sont susceptibles changer.
+                </p>
+                <p class="mt-3">
+                    <strong>Sécurité :</strong> 
+                    Ce site utilise une connexion sécurisée (HTTPS) et ne stocke aucune donnée personnelle sur ses serveurs.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update URL without page jump
+                    if (history.pushState) {
+                        history.pushState(null, null, targetId);
+                    } else {
+                        location.hash = targetId;
+                    }
+                }
+            });
+        });
+        
+        // Form submission with Formspree
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Détection de bot via le champ honeypot
+            const honeypotValue = document.getElementById('website').value;
+            if (honeypotValue) {
+                // Probable bot, ne pas traiter la soumission
+                return;
+            }
+            
+            // Show loading state
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalButtonText = submitButton.innerHTML;
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Envoi en cours...';
+            submitButton.disabled = true;
+            
+            // Votre endpoint Formspree
+            const formspreeEndpoint = "https://formspree.io/f/mqalqlzg";
+            
+            // Create form data
+            const formData = new FormData(this);
+            
+            // Récupérer les valeurs du formulaire pour le template de secours
+            const name = document.getElementById('nom').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('sujet').value;
+            const message = document.getElementById('message').value;
+            
+            // Préparer le template d'email pour la solution de secours
+            document.getElementById('email-template').textContent = `Sujet: ${subject}\n\nDe: ${name} <${email}>\n\nMessage:\n${message}`;
+            
+            // Send request to Formspree
+            fetch(formspreeEndpoint, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Show success message
+                    const successMessage = document.createElement('div');
+                    successMessage.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg flex items-center animate__animated animate__fadeInUp';
+                    successMessage.innerHTML = `
+                        <i class="fas fa-check-circle text-xl mr-3"></i>
+                        <span>Votre message a bien été envoyé ! Nous vous répondrons sous 24h.</span>
+                    `;
+                    
+                    document.body.appendChild(successMessage);
+                    
+                    // Remove after 5 seconds
+                    setTimeout(() => {
+                        successMessage.classList.add('animate__fadeOutDown');
+                        setTimeout(() => {
+                            document.body.removeChild(successMessage);
+                        }, 500);
+                    }, 5000);
+                    
+                    // Reset form
+                    this.reset();
+                } else {
+                    throw new Error('Erreur lors de l\'envoi du formulaire');
+                }
+            })
+            .catch(error => {
+                // Afficher la solution de secours
+                document.getElementById('fallback-section').style.display = 'block';
+                
+                // Faire défiler jusqu'à la solution de secours
+                document.getElementById('fallback-section').scrollIntoView({ behavior: 'smooth', block: 'center' });
+                
+                // Show error message
+                const errorMessage = document.createElement('div');
+                errorMessage.className = 'fixed bottom-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg flex items-center animate__animated animate__fadeInUp';
+                errorMessage.innerHTML = `
+                    <i class="fas fa-exclamation-circle text-xl mr-3"></i>
+                    <span>Le formulaire a rencontré un problème. Utilisez l'alternative ci-dessous.</span>
+                `;
+                
+                document.body.appendChild(errorMessage);
+                
+                // Remove after 5 seconds
+                setTimeout(() => {
+                    errorMessage.classList.add('animate__fadeOutDown');
+                    setTimeout(() => {
+                        document.body.removeChild(errorMessage);
+                    }, 500);
+                }, 5000);
+            })
+            .finally(() => {
+                // Reset button state
+                submitButton.innerHTML = originalButtonText;
+                submitButton.disabled = false;
+            });
+        });
+        
+        // Animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.hover-lift');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.classList.add('animate__animated', 'animate__fadeInUp');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Sécurité supplémentaire - Limiter les soumissions répétées
+        let lastSubmissionTime = 0;
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            const now = Date.now();
+            if (now - lastSubmissionTime < 5000) { // 5 secondes entre les soumissions
+                e.preventDefault();
+                alert('Veuillez patienter quelques secondes avant de soumettre à nouveau.');
+                return;
+            }
+            lastSubmissionTime = now;
+        });
+    </script>
+</body>
+</html>

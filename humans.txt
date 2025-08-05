@@ -1,0 +1,9 @@
+/* TEAM */
+Founder: [Votre nom]
+Contact: lechoixparfait01@gmail.com
+Site: https://lechoixparfait.github.io/web-comparaison/lechoixparfait/
+
+/* SITE */
+Last update: 2025/07/26
+Standards: HTML5, CSS3
+Components: Tailwind CSS, Font Awesome

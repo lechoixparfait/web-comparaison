@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Méthodologie d'Analyse - Le Choix Parfait</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297143058929791"
+     crossorigin="anonymous"></script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8VT7C9CHR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y8VT7C9CHR');
+</script>
+<body class="bg-gray-50 text-gray-800">
+    <amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-7297143058929791">
+    </amp-auto-ads>
+    <!-- Bouton "Retour en haut" -->
+    <div id="back-to-top" class="back-to-top" aria-label="Retour en haut de page">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <!-- Navigation -->
+    <nav class="sticky-nav bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="acceuil.html" class="flex items-baseline">
+                <span class="text-2xl font-bold text-blue-800">lechoix</span>
+                <span class="text-2xl font-bold text-orange-500 mx-1">parfait</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-6">
+                <a href="acceuil.html" class="flex items-center text-gray-700 hover:text-blue-800">
+                    <i class="fas fa-home mr-2"></i> Accueil
+                </a>
+                <a href="comparatif.html" class="flex items-center text-gray-700 hover:text-blue-800">
+                    <i class="fas fa-list-ol mr-2"></i> Comparatif
+                </a>
+                <a href="methodologie.html" class="flex items-center text-white bg-blue-800 px-3 py-1 rounded-lg">
+                    <i class="fas fa-flask mr-2"></i> Méthodologie
+                </a>
+                <a href="guide.html" class="flex items-center text-gray-700 hover:text-blue-800">
+                    <i class="fas fa-book mr-2"></i> Guide
+                </a>
+                <a href="contact.html" class="flex items-center text-gray-700 hover:text-blue-800">
+                    <i class="fas fa-envelope mr-2"></i> Contact
+                </a>
+            </div>
+            
+            <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <a href="acceuil.html" class="block px-4 py-3 border-b border-gray-100 flex items-center">
+                <i class="fas fa-home mr-3"></i> Accueil
+            </a>
+            <a href="comparatif.html" class="block px-4 py-3 border-b border-gray-100 flex items-center">
+                <i class="fas fa-list-ol mr-3"></i> Comparatif
+            </a>
+            <a href="methodologie.html" class="block px-4 py-3 border-b border-gray-100 flex items-center bg-blue-50 text-blue-800">
+                <i class="fas fa-flask mr-3"></i> Méthodologie
+            </a>
+            <a href="guide.html" class="block px-4 py-3 border-b border-gray-100 flex items-center">
+                <i class="fas fa-book mr-3"></i> Guide
+            </a>
+            <a href="contact.html" class="block px-4 py-3 flex items-center">
+                <i class="fas fa-envelope mr-3"></i> Contact
+            </a>
+        </div>
+    </nav>
+    
+    <!-- Transparency banner -->
+    <div class="bg-blue-50 border-b-2 border-blue-800 py-3 px-4 flex items-center justify-center">
+        <i class="fas fa-info-circle text-blue-800 mr-3"></i>
+        <p class="text-sm text-center">
+            Nos analyses sont basées exclusivement sur des données publiques et recherches approfondies. 
+            <strong>Actuellement, nous ne percevons aucune commission sur les liens d'achat</strong> 
+            car nous ne sommes partenaires d'aucune marque.
+        </p>
+    </div>
+    
+    <!-- Hero Banner -->
+    <section class="hero-banner text-white py-20 md:py-32 px-4">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-6">Notre Méthodologie <span class="text-orange-400">d'Analyse Rigoureuse</span></h1>
+            <p class="text-xl md:text-2xl mb-8">Découvrez comment nous évaluons chaque matelas pour vous garantir des recommandations fiables</p>
+            <a href="#criteres" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg shadow-md transition-all hover-lift">
+                Voir nos critères <i class="fas fa-arrow-down ml-2"></i>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Introduction -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <div class="bg-white rounded-xl shadow-md p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-6">Pourquoi des analyses rigoureuses sont essentielles</h2>
+                <p class="text-gray-700 mb-6">Choisir un matelas est un investissement important pour votre santé et votre bien-être. Chez Le Choix Parfait, nous croyons que des recommandations fiables doivent s'appuyer sur des analyses approfondies et objectives.</p>
+                
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded flex items-start">
+                    <i class="fas fa-microscope text-yellow-500 mt-1 mr-3 text-xl"></i>
+                    <div>
+                        <strong class="text-gray-800">Transparence :</strong>
+                        <p class="text-gray-700">Nos évaluations sont basées sur des données techniques disponibles publiquement, avis d'experts et retours consommateurs. Nous ne procédons pas à des tests physiques des produits.</p>
+                    </div>
+                </div>
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r mt-4">
+                    <p>
+                        <strong>Indépendance commerciale :</strong> 
+                        Nous ne maintenons actuellement aucun partenariat d'affiliation avec les marques évaluées, 
+                        et ne percevons aucune commission sur les ventes.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Pub -->
+    <div class="my-12 bg-gray-100 p-4 rounded-lg text-center">
+        <p class="text-sm text-gray-500 mb-2">Publicité</p>
+        <div class="bg-white p-4 rounded border border-gray-200">
+            <p class="text-gray-600">Espace réservé pour publicité</p>
+        </div>
+    </div>
+    
+    <!-- Critères d'analyse -->
+    <section id="criteres" class="py-12 px-4 bg-gray-50">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-2 text-center">Nos 12 Critères d'Évaluation</h2>
+            <p class="text-gray-600 mb-12 text-center">Chaque matelas est noté sur 100 points selon ces critères essentiels</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Critère 1 -->
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all hover-lift">
+                    <div class="flex items-start mb-4">
+                        <div class="critere-icon">1</div>
+                        <h3 class="text-xl font-bold text-blue-800">Confort général</h3>
+                    </div>
+                    <p class="text-gray-600">Évaluation à partir des avis consommateurs et rapports d'experts</p>
+                </div>
+                
+                <!-- Critère 2 -->
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all hover-lift">
+                    <div class="flex items-start mb-4">
+                        <div class="critere-icon">2</div>
+                        <h3 class="text-xl font-bold text-blue-800">Soutien lombaire</h3>
+                    </div>
+                    <p class="text-gray-600">Analyse des caractéristiques techniques et études ergonomiques</p>
+                </div>
+                
+                <!-- Critère 3 -->
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all hover-lift">
+                    <div class="flex items-start mb-4">
+                        <div class="critere-icon">3</div>
+                        <h3 class="text-xl font-bold text-blue-800">Respiration</h3>
+                    </div>
+                    <p class="text-gray-600">Étude des matériaux et technologies de régulation thermique</p>
+                </div>
+                
+                <!-- Critère 4 -->
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all hover-lift">
+                    <div class="flex items-start mb-4">
+                        <div class="critere-icon">4</div>
+                        <h3 class="text-xl font-bold text-blue-800">Durabilité</h3>
+                    </div>
+                    <p class="text-gray-600">Analyse des garanties et retours sur la longévité</p>
+                </div>
+                
+                <!-- Critère 5 -->
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all hover-lift">
+                    <div class="flex items-start mb-4">
+                        <div class="critere-icon">5</div>
+                        <h3 class="text-xl font-bold text-blue-800">Rapport qualité-prix</h3>
+                    </div>
+                    <p class="text-gray-600">Comparaison des caractéristiques par rapport au prix</p>
+                </div>
+                
+                <!-- Critère 6 -->
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all hover-lift">
+                    <div class="flex items-start mb-4">
+                        <div class="critere-icon">6</div>
+                        <h3 class="text-xl font-bold text-blue-800">Qualité des matériaux</h3>
+                    </div>
+                    <p class="text-gray-600">Étude des composants et certifications</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button id="show-more-criteres" class="inline-block bg-blue-800 hover:bg-blue-900 text-white font-medium py-2 px-6 rounded-lg transition-all">
+                    Voir les 6 autres critères <i class="fas fa-chevron-down ml-2"></i>
+                </button>
+            </div>
+            
+            <!-- Hidden criteria -->
+            <div id="more-criteres" class="hidden grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <!-- Critère 7 -->
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all hover-lift">
+                    <div class="flex items-start mb-4">
+                        <div class="critere-icon">7</div>
+                        <h3 class="text-xl font-bold text-blue-800">Indépendance de couchage</h3>
+                    </div>
+                    <p class="text-gray-600">Évaluation des perturbations lors des mouvements</p>
+                </div>
+                
+                <!-- Critère 8 -->
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all hover-lift">
+                    <div class="flex items-start mb-4">
+                        <div class="critere-icon">8</div>
+                        <h3 class="text-xl font-bold text-blue-800">Période d'essai</h3>
+                    </div>
+                    <p class="text-gray-600">Durée et conditions de la période de test</p>
+                </div>
+                
+                <!-- Critère 9 -->
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all hover-lift">
+                    <div class="flex items-start mb-4">
+                        <div class="critere-icon">9</div>
+                        <h3 class="text-xl font-bold text-blue-800">Garantie</h3>
+                    </div>
+                    <p class="text-gray-600">Durée et couverture de la garantie</p>
+                </div>
+                
+                <!-- Critère 10 -->
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all hover-lift">
+                    <div class="flex items-start mb-4">
+                        <div class="critere-icon">10</div>
+                        <h3 class="text-xl font-bold text-blue-800">Adaptabilité morphologie</h3>
+                    </div>
+                    <p class="text-gray-600">Capacité à s'adapter à différents poids et tailles</p>
+                </div>
+                
+                <!-- Critère 11 -->
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all hover-lift">
+                    <div class="flex items-start mb-4">
+                        <div class="critere-icon">11</div>
+                        <h3 class="text-xl font-bold text-blue-800">Facilité d'entretien</h3>
+                    </div>
+                    <p class="text-gray-600">Nettoyage et maintenance du matelas</p>
+                </div>
+                
+                <!-- Critère 12 -->
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all hover-lift">
+                    <div class="flex items-start mb-4">
+                        <div class="critere-icon">12</div>
+                        <h3 class="text-xl font-bold text-blue-800">Impact écologique</h3>
+                    </div>
+                    <p class="text-gray-600">Matériaux durables et processus de fabrication</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Processus d'analyse -->
+    <section class="py-12 px-4 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-2 text-center">Notre Processus d'Analyse en 4 Étapes</h2>
+            <p class="text-gray-600 mb-12 text-center">Comment nous transformons les données en recommandations fiables</p>
+            
+            <div class="space-y-8">
+                <!-- Étape 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 flex items-start transition-all hover-lift">
+                    <div class="etape-icon">1</div>
+                    <div class="ml-6">
+                        <h3 class="text-xl font-bold text-blue-800 mb-2">Collecte des données</h3>
+                        <p class="text-gray-600">Recherche approfondie des spécifications techniques, avis consommateurs et rapports d'experts. Nous analysons plus de 50 sources différentes pour chaque produit.</p>
+                    </div>
+                </div>
+                
+                <!-- Étape 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 flex items-start transition-all hover-lift">
+                    <div class="etape-icon">2</div>
+                    <div class="ml-6">
+                        <h3 class="text-xl font-bold text-blue-800 mb-2">Analyse comparative</h3>
+                        <p class="text-gray-600">Évaluation des produits selon notre grille de 12 critères clés. Chaque critère est pondéré selon son importance pour la qualité du sommeil.</p>
+                    </div>
+                </div>
+                
+                <!-- Étape 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 flex items-start transition-all hover-lift">
+                    <div class="etape-icon">3</div>
+                    <div class="ml-6">
+                        <h3 class="text-xl font-bold text-blue-800 mb-2">Vérification des sources</h3>
+                        <p class="text-gray-600">Croisement des informations avec des sources multiples pour garantir leur fiabilité. Nous éliminons les données contradictoires ou non vérifiables.</p>
+                    </div>
+                </div>
+                
+                <!-- Étape 4 -->
+                <div class="bg-gray-50 rounded-xl p-6 flex items-start transition-all hover-lift">
+                    <div class="etape-icon">4</div>
+                    <div class="ml-6">
+                        <h3 class="text-xl font-bold text-blue-800 mb-2">Rédaction des conclusions</h3>
+                        <p class="text-gray-600">Synthèse des résultats et élaboration des recommandations. Nous mettons en avant les forces et faiblesses de chaque produit de manière objective.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pub -->
+    <div class="my-12 bg-gray-100 p-4 rounded-lg text-center">
+        <p class="text-sm text-gray-500 mb-2">Publicité</p>
+        <div class="bg-white p-4 rounded border border-gray-200">
+            <p class="text-gray-600">Espace réservé pour publicité</p>
+        </div>
+    </div>
+        
+    
+    <!-- Engagement de transparence -->
+    <section class="py-12 px-4 bg-blue-50">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-2 text-center flex items-center justify-center">
+                <i class="fas fa-gavel mr-3"></i> Engagement de transparence
+            </h2>
+            <p class="text-gray-600 mb-12 text-center">Nos principes pour des analyses impartiales et fiables</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Principe 1 -->
+                <div class="bg-white rounded-xl shadow-md p-8 text-center transition-all hover-lift">
+                    <div class="transparence-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Sources multiples</h3>
+                    <p class="text-gray-600">Données constructeurs, études indépendantes, avis consommateurs vérifiés. Nous ne nous basons jamais sur une seule source d'information.</p>
+                </div>
+                
+                <!-- Principe 2 -->
+                <div class="bg-white rounded-xl shadow-md p-8 text-center transition-all hover-lift">
+                    <div class="transparence-icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Aucun test physique</h3>
+                    <p class="text-gray-600">Évaluations basées sur données disponibles publiquement. Nous ne procédons pas à des tests physiques pour garantir notre impartialité.</p>
+                </div>
+                
+                <!-- Principe 3 -->
+                <div class="bg-white rounded-xl shadow-md p-8 text-center transition-all hover-lift">
+                    <div class="transparence-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Liens affiliés clairs</h3>
+                    <p class="text-gray-600">Identification explicite des liens sponsorisés. Notre politique d'affiliation n'influence pas nos évaluations.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-white rounded-xl shadow-md p-6 max-w-3xl mx-auto">
+                <div class="flex items-start">
+                    <i class="fas fa-star text-yellow-500 text-2xl mr-4 mt-1"></i>
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-800 mb-2">Notre promesse</h3>
+                        <p class="text-gray-600">Nous nous engageons à maintenir une séparation stricte entre nos analyses et nos partenariats commerciaux. Nos recommandations sont toujours basées sur nos critères d'évaluation, jamais sur des considérations financières.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA -->
+    <section class="py-12 px-4 bg-gradient-to-r from-blue-800 to-blue-900 text-white">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6">Prêt à trouver votre matelas idéal ?</h2>
+            <p class="text-xl mb-8">Découvrez notre comparatif complet des meilleurs matelas selon notre méthodologie rigoureuse</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="comparatif.html" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg shadow-md transition-all hover-lift">
+                    Voir le classement <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="guide.html" class="inline-block bg-white hover:bg-gray-100 text-blue-800 font-bold py-3 px-8 rounded-lg shadow-md transition-all hover-lift">
+                    Lire notre guide <i class="fas fa-book ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Le Choix Parfait</h3>
+                    <p class="mb-4 text-blue-200">
+                        Comparateur indépendant de matelas depuis 2023. Nos analyses scientifiques vous aident à trouver le matelas idéal pour un sommeil réparateur.
+                    </p>
+                    <p class="text-blue-200">
+                        <strong>Note importante :</strong> Nos évaluations sont basées sur des recherches approfondies et des données disponibles publiquement. Nous ne procédons pas à des tests physiques des produits.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="acceuil.html" class="text-blue-200 hover:text-white transition-colors">Accueil</a></li>
+                        <li><a href="comparatif.html" class="text-blue-200 hover:text-white transition-colors">Comparatif</a></li>
+                        <li><a href="methodologie.html" class="text-blue-200 hover:text-white transition-colors">Méthodologie</a></li>
+                        <li><a href="guide.html" class="text-blue-200 hover:text-white transition-colors">Guide</a></li>
+                        <li><a href="contact.html" class="text-blue-200 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Légal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="page juridique.html" class="text-blue-200 hover:text-white transition-colors">Mentions légales</a></li>
+                        <li><a href="page juridique.html" class="text-blue-200 hover:text-white transition-colors">Politique de confidentialité</a></li>
+                        <li><a href="page juridique.html" class="text-blue-200 hover:text-white transition-colors">Préférences cookies</a></li>
+                        <li><a href="page juridique.html" class="text-blue-200 hover:text-white transition-colors">Politique d'affiliation</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-6 border-t border-blue-700 text-center text-blue-200 text-sm">
+                <p>© 2025 lechoixparfait.fr - Tous droits réservés</p>
+                <p class="mt-2">
+                    <strong>Transparence :</strong> 
+                    Actuellement, nous ne percevons aucune commission sur les achats via les liens présents sur ce site, 
+                    car nous ne sommes partenaires d'aucune marque. Les prix et disponibilités proviennent du site officiel et sont susceptibles changer.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        
+        // Show more criteria
+        document.getElementById('show-more-criteres').addEventListener('click', function() {
+            const moreCriteria = document.getElementById('more-criteres');
+            const button = this;
+            
+            moreCriteria.classList.toggle('hidden');
+            
+            if (moreCriteria.classList.contains('hidden')) {
+                button.innerHTML = 'Voir les 6 autres critères <i class="fas fa-chevron-down ml-2"></i>';
+            } else {
+                button.innerHTML = 'Masquer les critères <i class="fas fa-chevron-up ml-2"></i>';
+            }
+        });
+        
+        // Smooth scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update URL without page jump
+                    if (history.pushState) {
+                        history.pushState(null, null, targetId);
+                    } else {
+                        location.hash = targetId;
+                    }
+                }
+            });
+        });
+        
+        // Animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.hover-lift');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.classList.add('animate__animated', 'animate__fadeInUp');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
+
