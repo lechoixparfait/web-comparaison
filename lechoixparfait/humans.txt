@@ -1,7 +1,7 @@
 /* TEAM */
 Founder: Three Trust
 Contact: lechoixparfait01@gmail.com
-Site: https://lechoixparfait.github.io/web-comparaison/lechoixparfait/
+Site: https://lechoixparfait.github.io/web-comparaison/
 
 /* SITE */
 Last update: 2025/08/05
